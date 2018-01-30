@@ -10,7 +10,7 @@ window._ = require('lodash');
 try {
     window.$ = window.jQuery = require('jquery');
 
-    require('bootstrap-sass');
+    // require('bootstrap-sass');  // commentted this because we removed this from package.json
 } catch (e) {}
 
 /**
