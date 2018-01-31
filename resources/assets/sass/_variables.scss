@@ -1,6 +1,7 @@
 
 // Body
-$body-bg: #f5f8fa;
+$body-bg: whitesmoke;  //this is for the bootstrap
+$body-background-color: whitesmoke; // this is the varialbe name for the bulma. I don't know why this is not working properly.
 
 // Borders
 $laravel-border-color: darken($body-bg, 10%);

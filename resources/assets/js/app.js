@@ -22,3 +22,14 @@ Vue.use(Buefy);
 // const app = new Vue({
 //     el: '#app'
 // });
+
+const app = new Vue({
+  el: '#app',
+  data: {}
+});
+
+$(document).ready(function() {
+  $('div.dropdown').hover(function(e){
+    $(this).toggleClass('is-active');
+  })
+});
