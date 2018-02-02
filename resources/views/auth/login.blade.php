@@ -107,3 +107,11 @@
 		</div>
 </div>  --}}
 @endsection
+
+@section('scripts')
+<script>
+	const app = new Vue({
+		el: '#app'
+	})
+</script>
+@endsection

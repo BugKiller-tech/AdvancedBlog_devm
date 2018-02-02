@@ -23,13 +23,10 @@ Vue.use(Buefy);
 //     el: '#app'
 // });
 
-const app = new Vue({
-  el: '#app',
-  data: {}
-});
+// const app = new Vue({
+//   el: '#app',
+//   data: {}
+// });
 
-$(document).ready(function() {
-  $('div.dropdown').hover(function(e){
-    $(this).toggleClass('is-active');
-  })
-});
+
+require('./manage');

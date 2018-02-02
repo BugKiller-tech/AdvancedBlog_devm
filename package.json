@@ -15,11 +15,14 @@
         "jquery": "^3.2",
         "laravel-mix": "^2.0",
         "lodash": "^4.17.4",
-        "vue": "^2.5.7"
-    },
-    "dependencies": {
+        "vue": "^2.5.7",
+
+        
         "buefy": "^0.6.2",
         "bulma": "^0.6.2",
         "font-awesome": "^4.7.0"
+    },
+    "dependencies": {
+        
     }
 }
