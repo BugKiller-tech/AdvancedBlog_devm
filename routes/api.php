@@ -17,7 +17,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-// Test making api. that's really great 
-Route::get('users', function(Request $request){
-    return User::all();
+Route::middleware('auth:api')->group(function() {
+    Route::get('/posts/unique', 'PostController@apiCheckUnique')->name('api.posts.unique');
 });
+
+// Test making api. that's really great 
+// Route::get('users', function(Request $request){
+//     return User::all();
+// });
