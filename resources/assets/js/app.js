@@ -8,6 +8,9 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+window.Slug = require('slug');
+Slug.defaults.mode = 'rfc3986';
+
 import Buefy from 'buefy';
 
 Vue.use(Buefy);
@@ -27,6 +30,9 @@ Vue.use(Buefy);
 //   el: '#app',
 //   data: {}
 // });
+
+
+Vue.component('slug-widget', require('./components/slugWidget.vue'));
 
 
 require('./manage');
